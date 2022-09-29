@@ -96,11 +96,11 @@ h5 {
   background-color: #ddd;
 }
 
-/* Show menu on hover */
+/* Visar menyn vid hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* Make header sticky on the top */
+/* Gör headern sticky */
 .header {
   position: fixed;
   top: 0;
@@ -114,7 +114,7 @@ h5 {
   justify-content: space-between;
   align-items: center;
 }
-/* Hidden mobile hambuerger menu */
+/* dold mobil meny */
 .header .menu-btn {
   display: none;
 }
@@ -173,7 +173,7 @@ h5 {
   margin-top: 2.3rem;
   display: inline-block;
 }
-/* all button style */
+/* alla button style */
 .btn-custom {
   color: rgb(191 146 91);
   border: 2px solid;
@@ -182,11 +182,11 @@ h5 {
   text-transform: uppercase;
   font-weight: 700;
 }
-/* all button hover */
+/* alla button hover */
 .btn-custom:hover {
   background-color: rgb(59, 58, 58);
 }
-/* Add background opacity */
+/* Bakgrunds opacity/genomskinlighet */
 .banner-overlay {
   position: absolute;
   content: "";
@@ -197,7 +197,7 @@ h5 {
   left: 0;
 }
 
-/* set max width of your all container */
+/* sätter max width på alla containers */
 .container {
   max-width: 1160px;
   margin: 0 auto;
@@ -329,7 +329,7 @@ footer {
     top: -8px;
   }
 
-  /* Navbar btn */
+  /* Navbar knapp */
 
   .header .menu-btn:checked ~ .navbar {
     max-height: 510px;
