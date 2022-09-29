@@ -31,7 +31,7 @@ h5 {
   font-weight: 700;
 }
 
-/* General style */
+/* Generell style */
 
 /* Navbar container */
 .navbar {
@@ -40,7 +40,7 @@ h5 {
   transition: max-height 0.2s ease-out;
 }
 
-/* Links inside the navbar */
+/* Länkar inuti navbar */
 .navbar a {
   display: block;
   font-size: 16px;
@@ -65,13 +65,13 @@ h5 {
   text-transform: uppercase;
 }
 
-/* Add a red background color to navbar links on hover */
+/* Ändrar färgen på navbar länkarna när man hovrar över */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
   background-color: rgb(59, 58, 58);
 }
 
-/* Dropdown content (hidden by default) */
+/* Dropdown meny (dold i default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -81,7 +81,7 @@ h5 {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Länkarna i dropdown menyn */
 .dropdown-content a {
   float: none;
   color: black;
@@ -91,7 +91,7 @@ h5 {
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Ändrar färg på länkarna vid hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
