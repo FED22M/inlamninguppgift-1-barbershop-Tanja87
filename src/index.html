@@ -1,105 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
 
+<head>
     <title>Layout</title>
     <style type="text/css"></style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Main StyleSheet -->
     <link rel="stylesheet" href="index.css">
-                       
-    <style>
-        html,body,h1,h2,h3 {font-family: 'Barlow Semi Condensed'}
-                h1{text-align: left;}
-          
-        </style>
 </head>
-<!--stuff-->
+
+
 <body>
-    <div class="background-image">  
-    <div class="header">   
-        <div class="container_12">
-        <div class="grid_5">
-            <div class="banner h1">
-                <div class="banner-text">
-                    <h1>Barbershop</h1>
+
+    <div class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="banner">
+                    <div class="banner-text">
+                        <h1>Barbershop</h1>
+
+                    </div>
+                </div><!-- /banner -->
                 
-                </div> 
-                <div id="nav">
-                    <div class="nav_grid">
-                
+                <!-- Mobil meny här -->
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+                <div class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#services">Our services</a>
+                    <a href="#news">Pricing</a>
+                    <a href="#news">Gallery</a>
+                    <a href="#news">Team</a>
+                    <a href="#news">Block</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Contact
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
                         </div>
-            </div> 
-            <div class="navbar">
-                <a href="#home">Home</a>
-                <a href="#news">About</a>
-                <a href="#news">Pricing</a>
-                <a href="#news">Gallery</a>
-                <a href="#news">Team</a>
-                <a href="#news">Block</a>
-                <div class="dropdown">
-                  <button class="dropbtn">Contact
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
+                    </div>
+                </div><!-- navbar end -->
+
+            </div><!-- inre headern här -->
+        </div>
+    </div><!-- /header -->
+
+    <section class="banner-holder" id="home">
+        <div class="banner-overlay"></div><!-- banner-overlay/bild över bakgrund -->
+        <div class="container">
+            <div class="banner-content">
+                <h4 class="sub-title">
+                    Welcome to Barbershop
+                </h4>
+                <h1>
+                    We will make <span>your style</span> of your dreams
+                </h1>
+                <div class="banner-content--inner">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, nobis reprehenderit molestiae
+                        totam necessitatibus sapiente consequatur.</p>
+                    <a href="#" class="btn-custom">Learn More About Us</a>
                 </div>
-              </div> 
+            </div>
+        </div>
+    </section><!-- /banner-holder -->
 
+    <section class="service-holder" id="services">
+        <div class="hairstyles">
+            <a href="www.facebook.com">
+                <img class="service-image" src="Hairtrim.png.png">
+            </a>
+            <h3>Hair styles</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum excepturi cum eum aspernatur odio
+                omnis!</p>
 
-
-<footer>
-    <section class="container">
-    <div class="hairstyles">
-        <a href="www.facebook.com">
-<img src= "Hairtrim.png.png" width="106" height="106">  
-</a>          
-        <h3>Hair styles</h3>
-        <p>a small river named duden</p>
-
-    </div>
+        </div>
         <div class="beard_trim">
             <a href="www.facebook.com">
-                 <!--Placeholder bild-->
-                 <img src= "Beard_shave.png" width="106" height="106">  
-                 </a>
+                <!--Placeholder bild-->
+                <img class="service-image" src="Beard_shave.png">
+            </a>
             <h3> Beard Trim</h3>
-            <p>A small river named duden</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, placeat!</p>
         </div>
-        <div class="hot_shave" >
+        <div class="hot_shave">
             <a href="www.facebook.com">
-                 <!--Placeholder bild-->
-                <img src="https://www.facebook.com/images/fb_icon_325x325.png" width="106" height="106"/> 
-                 </a>
+                <!--Placeholder bild-->
+                <img class="service-image" src="hot_shave.png" />
+            </a>
             <h3>Hot shave</h3>
-            <p>A small river named duden</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia explicabo distinctio voluptate maxime
+                laborum molestiae vel officiis rem inventore. Quasi.</p>
         </div>
         <div class="hair_shampoo">
             <a href="www.facebook.com">
-                 <!--Placeholder bild-->
-                <img src="https://www.facebook.com/images/fb_icon_325x325.png" width="106" height="106"/> 
-                 </a>
+                <!--Placeholder bild-->
+                <img class="service-image" src="shampoo.png" />
+            </a>
             <h3>Hair shampoo</h3>
-            <p>A small river named duden</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt earum quidem distinctio. Facilis, expedita
+                rem.</p>
         </div>
-        </section>
-        <section class="copyright">Copyright &copy;</section>
+    </section><!-- /.service-holder -->
 
-
-
-        </div>
-    </div>
-
-    </section>
-
-</footer>
+    <footer class="copyright">Copyright &copy;</footer><!-- /.copyright -->
 
 </body>
-
-
-
 </html>
