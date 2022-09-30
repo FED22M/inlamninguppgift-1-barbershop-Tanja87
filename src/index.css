@@ -51,6 +51,9 @@ h5 {
   text-transform: uppercase;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+.navbar span{
+  color: rgb(191 146 91);
+}
 
 /* Dropdown button */
 .dropdown .dropbtn {
@@ -136,6 +139,14 @@ h5 {
   padding: 14rem 1rem;
   position: relative;
 }
+
+.banner-holder h1 span{
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+
+
+}
 /* Style banner text and button */
 .banner-content {
   color: #fff;
@@ -217,6 +228,7 @@ h5 {
   padding: 20px;
 }
 
+/*lägger bilderna ovanför*/
 .service-image {
   max-width: 230px;
   margin-top: -136px;
