@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Layout</title>
-    <style type="text/css"></style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/44f557ccce.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- Main StyleSheet -->
     <link rel="stylesheet" href="index.css">
@@ -19,14 +20,13 @@
 <body>
 
     <div class="header">
-        <div class="container">
-            <div class="header-inner">
-                <div class="banner">
-                    <div class="banner-text">
-                        <h1>Barbershop</h1>
-
-                    </div>
-                </div><!-- /banner -->
+    <div class="container">
+    <div class="header-inner">
+    <div class="banner">
+    <div class="banner-text">
+    <h1>Barbershop</h1>
+    </div>
+    </div><!-- /banner med text BARBERSHOP-->
                 
                 <!-- Hamburger meny här -->
                 <input class="menu-btn" type="checkbox" id="menu-btn">
@@ -34,50 +34,43 @@
 
                 <div class="navbar">
                     <a href="#home"><span>Home</span></a>
-                    <a href="#services">About</a>
+                    <a href="#about">About</a>
                     <a href="#news">Pricing</a>
                     <a href="#news">Gallery</a>
                     <a href="#news">Team</a>
                     <a href="#news">Blog</a>
-                    <div class="dropdown">
-                        <button class="dropbtn">Contact
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                </div><!-- navbar end -->
+                    <a href="#news">Contact</a>
 
-            </div><!-- inre headern här -->
+                </div>
+
+            </div><!-- inre headern -->
         </div>
-    </div><!-- /header -->
+    </div>
 
+    <!-- texten ovanför bilden-->
     <section class="banner-holder" id="home">
         <div class="banner-overlay"></div><!-- banner-overlay/bild över bakgrund -->
         <div class="container">
-            <div class="banner-content">
-                <h4 class="sub-title">
-                    Welcome to Barbershop
-                </h4>
-                <h1>
-                    We will make <span>your style</span> of your dreams
-                </h1>
-                <div class="banner-content--inner">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, nobis reprehenderit molestiae
-                        totam necessitatibus sapiente consequatur.</p>
-                    <a href="#" class="btn-custom">Learn More About Us</a>
-                </div>
-            </div>
+        <div class="banner-content">
+         <h4 class="sub-title">
+        Welcome to Barbershop
+        </h4>
+        <h1>
+        We will make <span>your style</span> of your dreams
+        </h1>
+        <div class="banner-content--inner">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, nobis reprehenderit molestiae
+         totam necessitatibus sapiente consequatur.</p>
+        <a href="#" class="btn-custom">Learn More About Us</a>
+        </div>
+        </div>
         </div>
     </section><!-- /banner-holder -->
 
-    <section class="service-holder" id="services">
+    <section class="service-holder">
         <div class="hairstyles">
             <a href="www.facebook.com">
-                <img class="service-image" src="Hairtrim.png.png">
+                <img class="service-image"  src="Hairtrim.png.png" alt="Hairtrim_picture">
             </a>
             <h3>Hair styles</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum excepturi cum eum aspernatur odio
@@ -87,7 +80,7 @@
         <div class="beard_trim">
             <a href="www.facebook.com">
                 <!--Placeholder bild-->
-                <img class="service-image" src="Beard_shave.png">
+                <img class="service-image" src="Beard_shave.png" alt="Beardshave_picture">
             </a>
             <h3> Beard Trim</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, placeat!</p>
@@ -95,7 +88,7 @@
         <div class="hot_shave">
             <a href="www.facebook.com">
                 <!--Placeholder bild-->
-                <img class="service-image" src="hot_shave.png" />
+                <img class="service-image" src="hot_shave.png" alt="Hotshave_picture" >
             </a>
             <h3>Hot shave</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia explicabo distinctio voluptate maxime
@@ -104,7 +97,7 @@
         <div class="hair_shampoo">
             <a href="www.facebook.com">
                 <!--Placeholder bild-->
-                <img class="service-image" src="shampoo.png" />
+                <img class="service-image" src="shampoo.png" alt="Shampoo_picture" >
             </a>
             <h3>Hair shampoo</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt earum quidem distinctio. Facilis, expedita
@@ -112,16 +105,160 @@
         </div>
     </section><!-- /.service-holder -->
 
-    <section id="About">
 
 
-
-
+    <!-- section about us here-->
+    <section id="about">
+        <div class="container">
+            <div class="about-holder">
+                <div class="about-img">
+                    <img src="about_us.jpg" alt="about us image">
+                </div>
+                <div class="about-content">
+                    <h4 class="sub-title">About barber</h4>
+                    <h2>A smooth barber <br> experience in your town</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem deserunt facilis, esse magni nemo dicta facere, maxime magnam eveniet odio aspernatur dolor obcaecati quis dolores, consequuntur nam voluptates at culpa fugiat et optio ullam minima. Cum obcaecati labore pariatur provident.</p>
+                    <div class="year-of-exp">
+                        <img src="calender.png" alt="calender">
+                        <div>
+                            <span>20</span>
+                            years of experience
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
 
-    <footer class="copyright">Copyright &copy Tanja söderholm</footer><!-- /.copyright -->
+
+
+ <!-- sektionen för reviews-->
+ <div class="rev-section"><br><br><br><br>
+   
+
+    <p><b> Testimonial</b></p>
+  <h2 class="title">People say<br> about our barber</h2>
+  
+  <div class="reviews">
+  
+  <div class="review">
+     <div class="head-review">
+        <img src="./rev1-modified.png" width="250px" alt="Review_pic1">
+     </div>
+     <div class="body-review">
+        <div class="name-review">Roger scott</div>
+        <div class="rating">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <div class="desc-review">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+     </div>
+  </div>
+  <div class="review">
+     <div class="head-review">
+        <img src="rev2.png" width="250px" alt="Review_pic2">
+     </div>
+     <div class="body-review">
+        <div class="name-review">Roger scott</div>
+        <div class="rating">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <div class="desc-review">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+     </div>
+  </div>
+  <div class="review">
+     <div class="head-review">
+        <img src="rev3.png" width="250px" alt="Review_pic3">
+     </div>
+     <div class="body-review">
+        <div class="name-review">Roger scott</div>
+        <div class="rating">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <div class="desc-review">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+     </div>
+  </div>
+  
+  </div>
+  
+  </div>
+  </section>
+<!--Footer sektionen-->
+
+<section id="footer">
+    <div class="footer">
+        <div class="footer_menu">
+           <div class="col_1">
+              <div class="title">
+                <p style="font-size:20px;">BARBERSHOP</p>
+              </div>  
+              <p style="color: #adadad;">Far far away, behind the mountains<br> far from the countries..</p>
+              <div class="social_media">
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+           </div>
+           </div>
+           <div class="col_2">
+             <div class="title">
+                <p style="font-size:20px;">EXPLORE </p>
+              </div>  
+              <ul>
+                <li><a href="#" style="text-decoration: none;">About</a></li>
+                <li><a href="#" style="text-decoration: none;"> Services</a></li>
+                <li><a href="#" style="text-decoration: none;">Gallery</a></li>
+                <li><a href="#" style="text-decoration: none;">Blog</a></li>
+              </ul>
+           </div>
+           <div class="col_3">
+             <div class="title">
+                <p style="font-size:20px;">INFO</p> 
+              </div>  
+              <ul>
+                <li><a href="#" style="text-decoration: none;">Join us</a></li>
+                <li><a href="#" style="text-decoration: none;">make an appointment</a></li>
+                <li><a href="#" style="text-decoration: none;">Privacy & Policies</a></li>
+                <li><a href="#" style="text-decoration: none;">Terms & conditions</a></li>
+              </ul>
+           </div>
+           <div class="col_4">
+             <div class="title">
+                <p style="font-size:20px;">HAVE A QUESTION?</p>
+              </div>             
+              <p style="color: #adadad;">203 Fake St.mountain</p>
+              <p style="color: #adadad;">2 view, San Fransisco,</p>
+              <p style="color: #adadad;">California, USA<br><br></p>
+              <p style="color: #adadad;">+2 392 3929 210 <br></p>
+        </div>
+        </div>
+        <div class="partners">
+            <ul>
+                <li><a class="partner1" href="#"></a></li>
+                <li><a class="partner2" href="#"></a></li>
+                <li><a class="partner3" href="#"></a></li>
+                <li><a class="partner4" href="#"></a></li>
+                <li><a class="partner5" href="#"></a></li>  
+            </ul>
+        </div>
+        <div class="social_media">
+
+
+        </div>
+    </div>
+</section>
 
 </body>
 </html>

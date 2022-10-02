@@ -15,7 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  background-color: rgb(20, 27, 37);
+  background-color: #fff;
   width: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -64,11 +64,11 @@ h5 {
   padding: 19px 21px;
   background-color: inherit;
   font-family: "Barlow Semi Condensed", sans-serif; 
-  margin: 0; /* viktig för vertikal positionering i mobil version  */
+  margin: 0; /* för vertikal positionering i mobil version  */
   text-transform: uppercase;
 }
 
-/* Ändrar färgen på navbar länkarna när man hovrar över */
+/* ändrar färgen på navbar länkarna när man hovrar över */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
   background-color: rgb(59, 58, 58);
@@ -94,7 +94,7 @@ h5 {
   text-align: left;
 }
 
-/* Ändrar färg på länkarna vid hover */
+/* annan färg vid hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
@@ -103,7 +103,7 @@ h5 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* Gör headern sticky */
+/*  headern blir sticky */
 .header {
   position: fixed;
   top: 0;
@@ -259,19 +259,287 @@ h5 {
 }
 
 /* Style footer */
-footer {
-  background-color: black;
-  color: azure;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.footer{
+  background: #222222;
+  padding: 50px;
+  font-size: 18px;
 }
-.copyright {
-  padding: 15px 0;
 
+
+/* About us - sektion 2 */
+
+.about-img img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+section#about {
+    padding: 60px 15px;
+}
+
+.about-content {
+    padding-top: 40px;
+}
+
+.about-content .sub-title {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    margin-bottom: 5px;
+}
+
+.about-content h2 {
+    text-transform: uppercase;
+    color: #333;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.year-of-exp {
+    background-color: #C0925B;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    max-width: 225px;
+    margin-top: 40px;
+}
+
+.year-of-exp > div {color: #fff;font-weight: 700;max-width: 115px;margin-left: 20px;font-size: 14px;text-transform: uppercase;line-height: 1.1;}
+
+.year-of-exp > div span {
+
+    font-size: 190%;
+    display: table;
+    line-height: 1.2;
+}
+
+.year-of-exp img {
+    width: 55px;
+}
+
+
+/* Reviews - sektion 3 */
+
+.rev-section{
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 100%;
   text-align: center;
+  background-color: rgb(235, 232, 222);
+}
+.rev-section p{
+color: rgb(191 146 91);
+}
 
-  border-top: 1px;
+.title{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: rgb(50, 50, 50);
+  margin-bottom: .5rem;
+  font-family: Barlow semi condensed;
+}
+.note{
+  font-size: 1.1rem;
+  color: rgb(150, 150, 150);
+  font-style: italic;
+    color: red;
+  font
+
+}
+
+.reviews{
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.review{
+  margin: 0 1rem;
+  min-width: 300px;
+  flex: 1;
+}
+
+.head-review{
+  margin: 1.75rem auto;
+  width: 150px;
+  height: 150px;
+}
+.head-review img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+}
+
+.body-review{
+  background-color: rgb(250, 249, 249);
+  padding: 2.5rem;
+  box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+}
+.name-review{
+  font-size: 1.5rem;
+  color: rgb(50, 50, 50);
+  margin-bottom: .25rem;
+}
+
+.rating{
+  color: rgb(191 146 91);
+  margin: 1rem 0;
+}
+.desc-review{
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  color: rgb(116, 115, 115);
+}
+
+@media (max-width: 678px){
+  .review{
+    margin-top: 1.5rem;
+  }
+}
+
+
+/* Footer - sektion */
+
+.footer p{
+  font-family:"Barlow Semi Condensed";
+  color:white
+   
+}
+
+ul {
+  font:15px "Poppins";
+  list-style-type: none;
+
+  
+  /*social media ikoner*/
+  }
+  .fa {
+    padding: 20px 15px;
+    font-size: 30px;
+    /* width: 50px; */
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  /* Facebook ikonen */
+  .fa-facebook {
+    color: rgb(183, 134, 73); 
+  }
+  /* Twitter ikonen*/
+  .fa-twitter {
+    color: rgb(183, 134, 73);
+  }
+  /* Insta ikonen*/
+  .fa-instagram {
+    color: rgb(183, 134, 73);
+  }
+
+
+.footer .footer_menu{
+ display: flex;
+ margin-bottom: 25px;
+ justify-content: space-between;
+}
+.footer a:hover {
+  background-color: #2b2a2a;
+}
+
+.footer .footer_menu .title{
+ margin-bottom: 10px;
+ color: #adadad;
+}
+
+.footer .footer_menu ul li a{
+ display: block;
+ margin-bottom: 6px;
+ color: #adadad;
+ font-family: "Poppins";
+}
+
+.footer .footer_menu ul li a:hover{
+ text-decoration: underline;
+}
+
+.footer .partners{
+ margin-bottom: 25px;
+}
+
+.footer .partners ul{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.footer .col1{
+  color:#ddd
+}
+
+.footer .social_media{
+ margin-left: -10px;
+}
+
+.footer .social_media ul{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 15px;
+}
+
+.footer .social_media ul li a{
+ display: block;
+ margin: 0 5px;
+ color: #fff;
+ font-size: 24px;
+ width: 50px;
+ height: 50px;
+ background: #fff;
+ color: #222222;
+ line-height: 50px;
+ border-radius: 3px;
+}
+
+
+.footer .social_media{
+ color: rgb(20, 27, 37);
+}
+
+@media (max-width:768px) {
+ .wrapper .navbar .logo{
+   font-size: 20px;
+ }
+ .main_container {
+   padding: 25px;
+ }
+ .main_container .item{
+   flex-direction: column;
+ }
+ .main_container .item .img_holder{
+   max-width: 750px;
+   width: 100%;
+ }
+ .main_container .item .item_info{
+   margin-left: 0;
+   width: 100%;
+   margin-top: 10px;
+   text-align: center;
+ }
+ .footer .footer_menu{
+   flex-direction: column;
+   width: 220px;
+   margin: 0 auto 25px;
+ }
+ .footer .footer_menu > div{
+   margin: 10px 0;
+ }
+ .footer .partners ul li a{
+   margin: 5px;
+ }
 }
 
 /* -------- tablet CSS ------- */
@@ -385,4 +653,56 @@ footer {
   .service-holder > div:not(:last-child) {
     padding-bottom: 8rem;
   }
+}
+
+
+/* Tablet css */
+
+@media(min-width:768px){
+  .about-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+  .about-holder > div {
+    flex: 0 0 48%;
+    max-width: 48%;
+    padding-top: 0;
+}
+}
+
+@media(min-width:1024px){
+  .about-content .sub-title {
+
+    font-size: 20px;
+}
+.about-content h2 {
+
+  font-size: 50px;
+}
+.about-content p {
+
+  font-size: 18px;
+}
+.year-of-exp {
+
+  padding: 18px;
+  max-width: 335px;
+
+}
+.year-of-exp img {
+  width: 70px;
+}
+.year-of-exp > div {
+
+  max-width: 150px;
+
+  font-size: 15px;
+
+}
+.year-of-exp > div span {
+  font-size: 230%;
+
+}
 }
